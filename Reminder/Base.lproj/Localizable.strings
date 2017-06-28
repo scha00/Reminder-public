@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Reminder
+
+  Created by Sahn Cha on 30/05/2017.
+  Copyright © 2017 Soncode. All rights reserved.
+*/
+
+// MARK: - Scripts: Title
+"sc-alert-theme-title" = "Sorry";
+"sc-alert-notification-title" = "We need your approval for sending notifications!";
+"sc-alert-unsaved-title" = "Unsaved changes";
+"sc-alert-past-title" = "The me in the past";
+
+// MARK: - Scripts: Main
+"sc-alert-delete-message" = "Do you wish to remove this reminder?";
+"sc-alert-theme-message" = "You need to purchase the theme pack to continue using this fantastic color!";
+"sc-alert-notification-message" = "[Settings > Reminder > Notifications]\nGo to the Settings app and turn the notification option on.";
+"sc-alert-unsaved-message" = "Do you wish to discard all modifications?";
+"sc-alert-past-message" = "We can't send messages through time. Please select times and dates that are available in the future.";
+
+// MARK: - Components
+"co-button-cancel" = "Cancel";
+"co-button-delete" = "Delete";
+"co-button-okay" = "Okay";
+"co-button-gotit" = "Got it";
+"co-button-discard" = "Discard";
+"co-button-savequit" = "Save & Quit";
+"co-button-exitanyway" = "Exit anyway";
+"co-button-mistake" = "It was a mistake(cancel).";
+
+// MARK: - Strings
+"str-default-title" = "New reminder";

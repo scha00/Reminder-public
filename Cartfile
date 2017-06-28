@@ -1,0 +1,7 @@
+git "git@github.com:scha00/Sphere.git"
+git "git@github.com:scha00/SNKit.git"
+github "kishikawakatsumi/KeychainAccess"
+github "iosdevzone/IDZSwiftCommonCrypto"
+github "hyperoslo/Hue"
+github "ReactiveX/RxSwift"
+github "RxSwiftCommunity/RxGesture"
