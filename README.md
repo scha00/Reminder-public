@@ -14,7 +14,7 @@ Reminder: S, is a simple yet versatile app that will prevent you from forgetting
 
 ### Version
 
-1.0.1(15)
+1.0.2(17)
 
 
 ### :link: Link
