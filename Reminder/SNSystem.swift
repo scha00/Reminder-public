@@ -106,6 +106,7 @@ final class SNSystem: NSObject {
     
     /// Add New Reminder
     func insertReminder(number: Int32, title: String, color: Data, repeatType: Enumerated.Repeat, times: [Date], days: [Date], weekdays: [Int], monthdays: [Int]) {
+        Logger.MSG("System) Insert Reminder")
         
         var timesParameter: [RTime] = []
         var daysParameter: [RDay] = []
@@ -172,6 +173,7 @@ final class SNSystem: NSObject {
     
     /// Modify Existing Reminder
     func modifyReminder(number: Int32, title: String, color: Data, repeatType: Enumerated.Repeat, times: [Date], days: [Date], weekdays: [Int], monthdays: [Int]) {
+        Logger.MSG("System) Modify Reminder")
         
         guard let reminder = findReminderBy(number: number) else { return }
         
@@ -245,6 +247,8 @@ final class SNSystem: NSObject {
     
     /// Delete Reminder
     func deleteReminder(uniqueId: String) {
+        Logger.MSG("System) Delete Reminder")
+        
         removeLocalNotifications(reminder: uniqueId)
         
         guard let reminder = findReminderBy(uniqueId: uniqueId) else { return }

@@ -55,6 +55,7 @@ extension AddViewController {
         self.saveTitleLabel.adjustsFontSizeToFitWidth = true
         self.saveView.backgroundColor = self.themeBackgroundColor
         self.saveView.rx.tapGesture()
+            .when(.ended)
             .debug()
             .subscribe(onNext: { [unowned self] _ in
                 self.saveAndDismiss()
@@ -159,6 +160,8 @@ extension AddViewController {
     }
     
     func saveAndDismiss() {
+        Logger.MSG("!! Save And Dismiss !!")
+        
         guard self.times.value.count > 0 &&
             ((self.repeatType == .norepeat && self.days.value.count > 0) ||
                 (self.repeatType == .day) ||

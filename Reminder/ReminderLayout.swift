@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ReminderLayoutDelegate {
+protocol ReminderLayoutDelegate: class {
     
     func collectionView(_ collectionView: UICollectionView, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize
     func cellPaddingForCollectionView(_ collectionView: UICollectionView) -> CGFloat
@@ -17,7 +17,7 @@ protocol ReminderLayoutDelegate {
 
 class ReminderLayout: UICollectionViewLayout {
 
-    var delegate: ReminderLayoutDelegate!
+    weak var delegate: ReminderLayoutDelegate!
     
     private var attributesCache: [IndexPath: UICollectionViewLayoutAttributes] = [:]
     private var contentHeight: CGFloat = 0.0
